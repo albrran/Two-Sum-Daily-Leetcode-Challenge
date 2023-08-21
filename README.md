@@ -21,4 +21,14 @@
         <li>Only one valid answer exists.</li>
     </ul>
 <h1>Solution 1: HashMap</h1>
-<p>Since we're given the target, we can go through the given nums and subtract target - nums which will give us a number in which we can then look through the hashmap to see if it exists. Imagine that we have different sizes of rulers and we have a target ruler of 12 cm. We want to find two rulers that have lengths that add up to 12cm, so we go through our given rulers subtracting its length from our target length and then checking if the resulting length exists within the rulers we have</p>
+<p>Since we're given the target, we can go through the given nums and subtract target - nums which will give us a number in which we can then look through the hashmap to see if it exists. Imagine that we have different sizes of rulers and we have a target ruler of 12 cm. We want to find two rulers that have lengths that add up to 12cm, so we go through our given rulers subtracting their length from our target length and then checking if the resulting length exists within the rulers we have</p>
+
+<h3>Lets break it down into steps</h3>
+<ol>
+    <li>Initialize HashMap</li>
+    <li>Iterate through the given array, declaring two integers: one to keep track of the current position and one to store the target - currentvalue in which we will look for</li>
+    <li>We have the difference, so now we want to peer into our populated hashmap to see if our difference exists, if it does, we want to initialize and return a new array containing the indexes of the values within the nums array that add up to our target</li>
+  <li>As a default, populate the hashmap</li>
+</ol>
+<p>Time Complexity: O(n). We're using a hashmap which is O(1) and a for loop which is O(n) resulting in O(n) linear time</p>
+<p>Space Complexity: O(n), where n is the number of elements in the nums array.</p>
