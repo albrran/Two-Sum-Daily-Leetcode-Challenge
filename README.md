@@ -22,6 +22,8 @@
     </ul>
 <h1>Solution 1: HashMap</h1>
 <p>Since we're given the target, we can go through the given nums and subtract target - nums which will give us a number in which we can then look through the hashmap to see if it exists. Imagine that we have different sizes of rulers and we have a target ruler of 12 cm. We want to find two rulers that have lengths that add up to 12cm, so we go through our given rulers subtracting their length from our target length and then checking if the resulting length exists within the rulers we have</p>
+          
+![twosumgif2](https://github.com/albrran/Two-Sum-Daily-Leetcode-Challenge/assets/120284166/ea2079d4-3af2-4243-9531-9ebf5c9d399a)
 
 <h3>Lets break it down into steps</h3>
 <ol>
@@ -35,6 +37,8 @@
 
 <h1>Solution 2: Nested for loop</h1>
 <p>Imagine you have a shopping list with the prices of various items, and you want to find two items from the list that add up to a specific total budget. The list is represented as an array of prices, and your task is to find the indices of two items in the array whose prices sum up to your budget.</p>
+
+![twosumgif1](https://github.com/albrran/Two-Sum-Daily-Leetcode-Challenge/assets/120284166/b5a0e8b8-5f35-4447-94d9-b17d482fd713)
     <h2>Code Explanation:</h2>
     <p>Suppose you have the following shopping list with item prices:</p>
     <pre><code>
